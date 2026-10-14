@@ -1,0 +1,96 @@
+.admin-login-page {
+    min-height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Popup Box */
+.admin-login-box {
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 119, 182, 0.18);
+    border: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.admin-login-box h1 {
+    color: #0077b6;
+    margin: 8px 0;
+    font-size: 30px;
+}
+
+.admin-login-box p {
+    color: #666;
+    margin-bottom: 28px;
+}
+
+/* Small Admin Label */
+.admin-login-box::before {
+    content: "ADMIN PANEL";
+    display: inline-block;
+    color: #0077b6;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    background-color: #eaf7fc;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+/* Input Fields */
+.admin-login-box input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    margin-bottom: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.admin-login-box input:focus {
+    border-color: #0077b6;
+    box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.10);
+}
+
+/* Login Button */
+.admin-login-box button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.admin-login-box button:hover {
+    background-color: #005f8f;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .admin-login-page {
+        padding: 20px;
+    }
+
+    .admin-login-box {
+        padding: 30px 22px;
+    }
+
+    .admin-login-box h1 {
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,175 @@
+.about-page{
+    width: 100%;
+    background: #f5f7fa;
+}
+
+/* Banner */
+
+.about-banner{
+    position: relative;
+}
+
+.about-banner img{
+    width: 100%;
+    height: 280%;
+    object-fit: cover;
+    display: block;
+}
+
+.about-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.about-overlay h1{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.about-overlay p{
+    font-size: 18px;
+}
+
+/* About Content */
+
+.about-content{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.about-content h1{
+    font-size: 42px;
+    color: #0b5ed7;
+    margin-bottom: 20px;
+}
+
+.about-content p{
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Why Choose Us */
+
+.why-us{
+    width: 90%;
+    margin: 70px;
+    padding: 20px 0 60px;
+}
+
+.why-us h2{
+    text-align: center;
+    font-size: 36px;
+    color: #0b5ed7;
+    margin-bottom: 40px;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap: 25px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.feature{
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.feature:hover{
+    transform: translateY(-8px);
+}
+
+.icon{
+    font-size: 45px;
+    color: #00a8a8;
+    margin-bottom: 15px;
+}
+
+.feature h3{
+    color: #003566;
+    margin-bottom: 15px;
+}
+
+.feature p{
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Gallery */
+
+.gallery{
+    width: 90%;
+    margin-top: 80px;
+    padding-bottom: 60px;
+}
+
+.gallery h2{
+    text-align: center;
+    font-size: 36px;
+    color: #0b5ed7;
+    margin-bottom: 30px;
+}
+
+.gallery-images{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.gallery-images img{
+    width: 500px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    transition: .3s;
+}
+
+.gallery-images img:hover{
+    transform: scale(1.03);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .about-banner img{
+        height: 250px;
+    }
+
+    .about-content{
+        width: 95%;
+    }
+
+    .about-content h1{
+        font-size: 32px;
+    }
+
+    .about-content p{
+        font-size: 16px;
+    }
+
+    .gallery-images img{
+        width: 100%;
+        height: auto;
+    }
+}

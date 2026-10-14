@@ -1,0 +1,112 @@
+/* Home Page */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f5f7fa;
+}
+
+/* Hero Section */
+
+.hero{
+    width: 100%;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Buttons */
+
+.home-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.btn{
+    text-decoration: none;
+    background: #0077b6;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #023e8a;
+}
+
+.book-btn{
+    background: #2e8b57;
+}
+
+.book-btn:hover{
+    background: #1f6f43;
+}
+
+/* About */
+
+.about-home{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.about-home h2{
+    color: #003366;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.about-home p{
+    color: #555;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.read-btn{
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    background: #0077b6;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+}
+
+.read-btn:hover{
+    background: #023e8a;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+    .hero img{
+        height: 250px;
+    }
+
+    .home-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-home{
+        width: 95%;
+        padding: 25px;
+    }
+}
